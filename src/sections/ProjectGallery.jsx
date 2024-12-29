@@ -21,7 +21,7 @@ export default function ProjectGallery() {
                 <div key={index} className="border border-gray-600 rounded-lg overflow-hidden shadow-lg">
                   <img src={project.src} width={400} height={300} priority alt={project.title} className="w-full h-48 object-cover" />
                   <div className="p-4 bg-gradient-to-b from-gray-900 to-transparent">
-                    <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
+                    <h3 className="text-lg font-semibold mb-2 font-regular">{project.title}</h3>
                     <p className="text-sm text-gray-600 mb-4">{project.content}</p>
                     <div className="flex flex-wrap gap-2">
                       {project.techStack.map((tech, i) => (
@@ -31,6 +31,20 @@ export default function ProjectGallery() {
                         </div>
                       ))}
                     </div>
+
+                    {
+                      project.url && (
+                        <Link
+                          to={project.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block bg-blue-500 text-white text-sm mt-4 font-medium px-4 py-2 rounded-md"
+                        >
+                          View
+                        </Link>
+                      )
+                    }
+
                   </div>
                 </div>
               ))}
@@ -49,15 +63,15 @@ export default function ProjectGallery() {
                   }}
                   className="flex w-full justify-between items-center px-12 xl:px-24 py-12 border-t border-gray-300 cursor-pointer transition-all duration-200 last:border-b hover:opacity-50"
                 >
-                  <h2 className="text-4xl font-normal transition-all duration-400 hover:translate-x-[-10px]">
+                  <h2 className="text-4xl font-regular font-normal transition-all duration-400 hover:translate-x-[-10px]">
                     {project.title}
                   </h2>
                   <p className="font-light transition-all duration-400 hover:translate-x-[10px]">{project.subtitle}</p>
                 </div>
               ))}
-              
+
               <Modal modal={modal} projects={projectdeta} />
-               
+
             </div>
           </div>
         </main>
@@ -134,31 +148,31 @@ const Modal = ({ modal, projects }) => {
         </div>
       </motion.div>
 
-           <motion.div
+      <motion.div
         ref={cursor}
-        className={`absolute z-10 flex items-center justify-center w-20 h-20 bg-white text-black rounded-full font-light text-sm pointer-events-none  ${hasUrl ? "flex":"hidden"}`}
+        className={`absolute z-10 flex items-center justify-center w-20 h-20 bg-white text-black rounded-full font-light text-sm pointer-events-none  ${hasUrl ? "flex" : "hidden"}`}
         variants={scaleAnimation}
         initial="initial"
         animate={active ? "enter" : "closed"}
-      /> 
+      />
 
       {/* Show the cursor label only if there is a URL */}
-    
-        <motion.div
-          ref={cursorLabel}
-          className={`absolute z-10  items-center justify-center w-20 h-20 bg-transparent text-black rounded-full font-light text-sm pointer-events-none  ${hasUrl ? "flex":"hidden"}`}
-          variants={scaleAnimation}
-          initial="initial"
-          animate={active ? "enter" : "closed"}
-        >
-          {/* This div will allow the link to be clickable but won't affect the animation */}
-          <div className="relative pointer-events-auto">
-            <Link to={project.url} target="_blank">
-              View
-            </Link>
-          </div>
-        </motion.div>
-    
+
+      <motion.div
+        ref={cursorLabel}
+        className={`absolute z-10  items-center justify-center w-20 h-20 bg-transparent text-black rounded-full font-light text-sm pointer-events-none  ${hasUrl ? "flex" : "hidden"}`}
+        variants={scaleAnimation}
+        initial="initial"
+        animate={active ? "enter" : "closed"}
+      >
+        {/* This div will allow the link to be clickable but won't affect the animation */}
+        <div className="relative pointer-events-auto">
+          <Link to={project.url} target="_blank">
+            View
+          </Link>
+        </div>
+      </motion.div>
+
     </>
   );
 };

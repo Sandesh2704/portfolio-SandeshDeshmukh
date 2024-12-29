@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Sandesh Deshmukh's Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my portfolio! I am **Sandesh Deshmukh**, a passionate developer specializing in **Next.js**, **MERN stack**, and **UI development**. This portfolio showcases my skills, projects, and experiences in building modern, responsive web applications.
 
-## Available Scripts
+## 🚀 Technologies and Skills
+- **Next.js**: Leveraging the power of React with Next.js to build high-performance, server-rendered web applications.
+- **MERN Stack**: MongoDB, Express.js, React, and Node.js for building full-stack applications.
+- **UI Development**: Creating user-friendly, responsive, and accessible web interfaces with modern CSS frameworks like Tailwind CSS.
+- **Tools**: Git, GitHub, and other development tools to ensure quality and collaboration in projects.
 
-In the project directory, you can run:
+## 💼 Projects
 
-### `npm start`
+Here are some of the key projects I've worked on:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. **CRM Portal for Company Management**
+   - **Tech Stack**: React.js, Node.js, MongoDB, Express.js
+   - A multi-role portal with dashboards tailored for task management, attendance tracking, and performance monitoring.
+   - ![CRM Portal](https://via.placeholder.com/400x300) *(Add actual project screenshot)*
+  
+### 2. **Token Presale Platform**
+   - **Tech Stack**: Next.js, Tailwind CSS, Framer Motion, Chart.js
+   - A front-end for a token presale platform supporting multiple blockchain currencies and responsive design.
+   - [🔗 Visit Project](https://rebel-protocol-96wiljsxr-sandesh-deshmukhs-projects.vercel.app/)
+   - ![Token Presale](https://via.placeholder.com/400x300) *(Add actual project screenshot)*
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 3. **Frontend & UI Development for Web Applications**
+   - **Tech Stack**: Next.js, React.js, MongoDB, Express.js
+   - Responsive and user-centric web applications using the MERN stack and Next.js, ensuring seamless user experiences.
+   - [🔗 Visit Project](https://toobdog-2q49s21vb-sandesh-deshmukhs-projects.vercel.app/)
+   - ![Frontend UI](https://via.placeholder.com/400x300) *(Add actual project screenshot)*
 
-### `npm test`
+### 4. **UI Design Conversion to Code**
+   - **Tech Stack**: React.js, Tailwind CSS
+   - Successfully converted a complex design into a fully functional and responsive user interface.
+   - ![UI Design](https://via.placeholder.com/400x300) *(Add actual project screenshot)*
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📞 Contact Me
 
-### `npm run build`
+You can reach out to me through the following channels:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Phone**: [📞 +91 9767359779](tel:+919767359779)
+- **Email**: [📧 sandeshdeshmukh2704@gmail.com](mailto:sandeshdeshmukh2704@gmail.com)
+- **Portfolio**: [🌐 Visit Portfolio](https://sandeshportfolio.com)
+- **GitHub**: [👨‍💻 Sandesh2704](https://github.com/Sandesh2704)
+- **LinkedIn**: [🔗 Sandesh Deshmukh](https://www.linkedin.com/in/sandeshdeshmukh-036b4624b)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Feel free to explore my work and connect with me through the contact links available above.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

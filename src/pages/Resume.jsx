@@ -1,22 +1,36 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { gsap } from 'gsap';
 import { Link } from 'react-router-dom';
 import resumeData from '../deta/resumedeta.js'
 import propfile from "../assets/profile-img/demo-profile-img.webp"
+import { FaDownload } from 'react-icons/fa';
 
 
-const SectionTitle = ({ title }) => (
-    <h2 className="text-2xl font-bold text-gray-900 mb-4">{title}</h2>
-)
-
-const Paragraph = ({ children }) => (
-    <p className="text-gray-600 text-sm xl:text-base  mb-4">{children}</p>
-)
-
-const SkillTag = ({ skill }) => (
-    <span className= "px-3 lg:px-4 py-1 rounded-full bg-gray-200 text-sm text-gray-700 mr-2 mb-2">{skill}</span>
-)
 
 export default function Resume() {
+
+    useEffect(() => {
+        // GSAP effect: apply magnetic effect to the download button
+        const btn = document.querySelector(".download-btn");
+
+        // Magnetic effect (on mouse hover)
+        btn.addEventListener("mousemove", (e) => {
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;
+            gsap.to(btn, {
+                x: mouseX - btn.offsetLeft - btn.offsetWidth / 1,
+                y: mouseY - btn.offsetTop - btn.offsetHeight / 1,
+                duration: 0.3,
+                ease: "power2.out",
+            });
+        });
+
+        // Reset position on mouse out
+        btn.addEventListener("mouseleave", () => {
+            gsap.to(btn, { x: 0, y: 0, duration: 0.3 });
+        });
+    }, []);
+
     return (
         <div className="">
             <div className="container lg:mx-auto py-12 max-w-5xl">
@@ -35,15 +49,15 @@ export default function Resume() {
                                 <p className="text-xl mt-1">{resumeData.personalInfo.title}</p>
                                 <div className="mt-4 flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-3">
                                     {resumeData.personalInfo.contact.map((contact, index) => (
-                                        <Link 
-                                        key={index}
-                                        to={contact.link} 
-                                        target="_blank"
-                                         rel="noopener noreferrer"
-                                         className="flex items-center hover:text-blue-700">
+                                        <Link
+                                            key={index}
+                                            to={contact.link}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex items-center hover:text-blue-700">
                                             {contact.icon && <span className="mr-1">{contact.icon}</span>}
 
-                                            
+
                                             {contact.title}
 
                                         </Link>
@@ -88,7 +102,7 @@ export default function Resume() {
                                 {resumeData.experience.map((job, index) => (
                                     <div key={index} className="md:border-l-2 border-gray-300 md:pl-4 md:ml-2">
                                         <div className="relative">
-                                             <h3 className="text-xl font-semibold text-gray-900">{job.role}</h3>
+                                            <h3 className="text-xl font-semibold text-gray-900">{job.role}</h3>
                                             <div className="flex flex-col md:flex-row md:justify-between text-gray-600 mb-2">
                                                 <p>{job.company} - {job.location}</p>
                                                 <p>{job.duration}</p>
@@ -96,10 +110,10 @@ export default function Resume() {
                                         </div>
                                         <ul className="list-disc list-inside text-gray-600 space-y-1">
                                             {job.tasks.map((task, taskIndex) => (
-                                    
- <li key={taskIndex}>{task}</li>
-                                          
-                                               
+
+                                                <li key={taskIndex}>{task}</li>
+
+
                                             ))}
                                         </ul>
                                     </div>
@@ -149,7 +163,33 @@ export default function Resume() {
                     </div>
                 </div>
             </div>
+
+
+            {/* Download button (Fixed at bottom-left) */}
+            <Link
+                to="https://drive.google.com/your-resume-link"  // Use Link for navigation (e.g., a Google Drive link)
+                target="_blank"
+                rel="noopener noreferrer"
+                className="download-btn fixed bottom-6 left-6 p-4 bg-blue-500 text-white rounded-lg shadow-lg transform transition-all hover:scale-105 flex items-center space-x-2"
+            >
+                <FaDownload className="text-white" /> {/* Download Icon */}
+                <span className='hidden md:flex'>Download Resume</span>
+            </Link>
         </div>
     )
 }
 
+
+
+
+const SectionTitle = ({ title }) => (
+    <h2 className="text-2xl font-bold text-gray-900 mb-4">{title}</h2>
+)
+
+const Paragraph = ({ children }) => (
+    <p className="text-gray-600 text-sm xl:text-base  mb-4">{children}</p>
+)
+
+const SkillTag = ({ skill }) => (
+    <span className="px-3 lg:px-4 py-1 rounded-full bg-gray-200 text-sm text-gray-700 mr-2 mb-2">{skill}</span>
+)
