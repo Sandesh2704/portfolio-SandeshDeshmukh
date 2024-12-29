@@ -9,7 +9,7 @@ const resumeData = {
         contact: [
             { title: '+91 9767359779', icon: <FaPhoneAlt />, link: 'tel:+919767359779'  },
             { title: 'Email',  icon: <MdEmail/>, link: 'mailto:sandeshdeshmukh2704@gmail.com' },
-            { title: 'Portfolio', icon: <FaBriefcase />, link: 'https://sandeshportfolio.com' },
+            { title: 'Portfolio', icon: <FaBriefcase />, link: 'https://portfolio-sandesh-deshmukh.vercel.app/' },
             { title: 'GitHub', icon: <FaGithub />, link: 'https://github.com/Sandesh2704' },
             { title: 'LinkedIn', icon: <FaLinkedin />, link: 'https://www.linkedin.com/in/sandeshdeshmukh-036b4624b' },
         ]
