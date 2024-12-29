@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #000;
+  --foreground: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Styles for the home page */
+.home-body {
+  color: var(--foreground);
+  background: var(--background);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.resume-body{
+background: gainsboro;
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+  }
+}
