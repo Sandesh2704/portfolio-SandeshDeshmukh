@@ -70,7 +70,7 @@ export default function Footer() {
                             {socialMedia.map((item, index) =>
                                 <div key={index}>
                                     <Link
-                                        href={item.url}
+                                        to={item.url}
                                         target="_blank"
                                          rel="noopener noreferrer"
                                         className="flex items-center font-regular group hover:text-blue-500 transition"
@@ -87,7 +87,7 @@ export default function Footer() {
                     </div>
 
                     <div className="lg:absolute  -top-5 w-full justify-center flex gap-10 right-0 mt-4 lg:mt-0">
-                        <Link href="" className="font-regular w-fit text-sm xl:text-lg flex gap-2 justify-center">
+                        <Link to="mailto:sandeshdeshmukh2704@gmail.com" className="font-regular w-fit text-sm xl:text-lg flex gap-2 justify-center">
                             Built and Designed by <span className='text-customGray'>Sandesh Deshmukh</span>
                         </Link>
                         <div className="lg:flex lg:flex-1 hidden w-full h-[14px] border-r border-b border-l self-end rounded-b-lg rounded-bl-lg border-white" />
