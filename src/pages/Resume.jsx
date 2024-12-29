@@ -167,7 +167,7 @@ export default function Resume() {
 
             {/* Download button (Fixed at bottom-left) */}
             <Link
-                to="https://drive.google.com/your-resume-link"  // Use Link for navigation (e.g., a Google Drive link)
+                to="https://docs.google.com/document/d/1eoLigljS_pVKCFpcLwsmKKereg6j4L_2HlqcdEr2d5w/edit?usp=sharing"  // Use Link for navigation (e.g., a Google Drive link)
                 target="_blank"
                 rel="noopener noreferrer"
                 className="download-btn fixed bottom-6 left-6 p-4 bg-blue-500 text-white rounded-lg shadow-lg transform transition-all hover:scale-105 flex items-center space-x-2"
