@@ -282,7 +282,7 @@ export default function SkillsGallery() {
                 visible: { opacity: 1, transition: { duration: 0.5 } },
               }}
             >
-              <div className="flex flex-wrap justify-center px-6 pb-6 gap-y-16 md:gap-y-12 lg::gap-y-6 gap-x-7">
+              <div className="flex flex-wrap justify-center px-6 pb-6 gap-y-16 md:gap-y-12 lg:gap-y-6 gap-x-8 md:gap-x-7">
                 {category.skills.map((skill, i) => (
                   <motion.div
                     key={skill.name}
