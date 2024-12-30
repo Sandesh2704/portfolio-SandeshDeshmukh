@@ -15,10 +15,10 @@ export default function Home() {
 
 
             <div className="">
-                <Herosection />
+                {/* <Herosection /> */}
                 <IntroSection />
-                <SkillsGallery />
-                <ProjectGallery />
+                {/* <SkillsGallery />
+                <ProjectGallery /> */}
             </div>
         </>
     )
