@@ -35,8 +35,8 @@ const projectdeta = [
     ],
   },
   {
-    src: project3,
-    url : 'https://toobdog-2q49s21vb-sandesh-deshmukhs-projects.vercel.app/',
+    src: project4,
+
     title: "Frontend & UI Development for Web Applications",
     color: "#EFE8D3",
     subtitle: "Design & Development",
@@ -49,7 +49,8 @@ const projectdeta = [
     ],
   },
   {
-    src: project4,
+    src: project3,
+    url : 'https://toobdog-2q49s21vb-sandesh-deshmukhs-projects.vercel.app/',
     title: "UI Design Conversion to Code",
     color: "#706D63",
     subtitle: "Development",
