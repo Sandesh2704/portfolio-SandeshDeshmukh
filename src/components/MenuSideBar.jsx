@@ -102,7 +102,7 @@ export default function MenuSideBar() {
                             className="fixed w-[80%] md:w-[40%] lg:w-[30%] top-0 right-0 h-screen bg-[#282828] text-white"
                         >
                             <Curve />
-                            <div className="relative z-50 h-full px-24 flex flex-col">
+                            <div className="relative z-50 h-full px-12 md:px-24 flex flex-col">
                                 {/* Navigation items */}
                                 <div
                                     onMouseLeave={() => {

@@ -16,7 +16,7 @@ export default function ConditionalLayout() {
                         <Route
                             path="/"
                             element={
-                                <div  className="home-body  px-4 lg:px-7 xl:px-10"  >
+                                <div  className="home-body  px-4 md:px-7 xl:px-10"  >
                                     <NavBar />
                                     <Home />
                                     <Footer />

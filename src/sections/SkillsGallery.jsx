@@ -255,9 +255,9 @@ export default function SkillsGallery() {
             >
               <h1
                 className={`${isMobile
-                  ? "py-4 flex text-[3rem] lg:text-[4rem] xl:text-[5rem] leading-[2.5rem] md:leading-[3.5rem] xl:leading-[5.5rem]"
+                  ? "py-4 flex text-[3rem] lg:text-[4rem] xl:text-[5rem] leading-[3rem] md:leading-[3.5rem] xl:leading-[5.5rem]"
                   : expandedIndex === index
-                    ? "flex text-[3rem] lg:text-[4rem] xl:text-[5rem] leading-[2.5rem] md:leading-[3.5rem] xl:leading-[5.5rem]"
+                    ? "flex text-[3rem] lg:text-[4rem] xl:text-[5rem] md:leading-[3.5rem] xl:leading-[5.5rem]"
                     : "hidden"
                   } text-shadow px-4 text-gray-500/80 font-bold pointer-events-none`}
               >
@@ -282,11 +282,11 @@ export default function SkillsGallery() {
                 visible: { opacity: 1, transition: { duration: 0.5 } },
               }}
             >
-              <div className="flex flex-wrap justify-center px-6 pb-6 gap-y-6 gap-5">
+              <div className="flex flex-wrap justify-center px-6 pb-6 gap-y-16 md:gap-y-6 gap-x-7">
                 {category.skills.map((skill, i) => (
                   <motion.div
                     key={skill.name}
-                    className={`flex w-20 lg:w-28 xl:w-36 h-20 lg:h-28 xl:h-36 flex-col text-center items-center justify-center transform hover:scale-110 transition-transform duration-300 ${isMobile ? "text-3xl lg:text-[4.5rem]" : "text-2xl lg:text-3xl xl:text-[4.5rem]"}`}
+                    className={`flex w-16 sm:w-20 lg:w-28 xl:w-36 h-16 sm:h-20 lg:h-28 xl:h-36 flex-col text-center items-center justify-center transform hover:scale-110 transition-transform duration-300 ${isMobile ? "text-3xl lg:text-[4.5rem]" : "text-2xl lg:text-3xl xl:text-[4.5rem]"}`}
                     custom={i}
                     variants={skillsVariant}
                     initial="hidden"

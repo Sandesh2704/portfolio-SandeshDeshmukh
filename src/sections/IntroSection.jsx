@@ -36,7 +36,7 @@ export default function IntroSection() {
         phrase.split(" ").forEach((word, i) => {
             const letters = splitLetters(word, highlights.includes(word.toUpperCase()));
             body.push(
-                <p key={word + "_" + i} className={` lg:leading-[1.25] md:leading-[40px] leading-[34px]  lg:text-[38px] md:text-3xl text-[22px] font-[300] m-0 mr-3 md:mr-5 ${i === 0 ? "indent-56" : ""}`}>
+                <p key={word + "_" + i} className={` lg:leading-[1.25] md:leading-[40px] leading-[34px]  lg:text-[38px] md:text-3xl text-[22px] font-[300] m-0 mr-3 md:mr-5 ${i === 0 ? "md:indent-40 lg:indent-56" : ""}`}>
                     {letters}
                 </p>
             );
