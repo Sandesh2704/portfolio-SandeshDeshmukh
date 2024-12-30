@@ -65,7 +65,7 @@ export default function MenuSideBar() {
             <div className="fixed bottom-5 right-5 z-40">
                  <div
                     onClick={() => setIsActive(!isActive)}
-                    className="flex items-center justify-center shadow-md h-[65px] w-[65px] bg-white rounded-full cursor-pointer"
+                    className="flex items-center justify-center shadow-md  h-16 w-16 md:h-[65px] md:w-[65px] bg-white rounded-full cursor-pointer"
                 >
                     <div className="relative w-5">
                         <span
@@ -171,7 +171,7 @@ const MenuLink = ({ data, isActive, setSelectedIndicator, handleClick }) => {
         >
             <motion.div
                 variants={scale}
-                animate={isActive ? "open" : "closed"}
+                animate={isActive ? "closed" :"open" }
                 className="w-2.5 h-2.5 bg-white rounded-full absolute left-[-30px]"
             ></motion.div>
 

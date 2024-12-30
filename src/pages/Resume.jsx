@@ -5,8 +5,6 @@ import resumeData from '../deta/resumedeta.js'
 import propfile from "../assets/profile-img/demo-profile-img.webp"
 import { FaDownload } from 'react-icons/fa';
 
-
-
 export default function Resume() {
 
     useEffect(() => {
@@ -35,7 +33,7 @@ export default function Resume() {
         <div className="">
             <div className="container lg:mx-auto py-12 max-w-5xl">
                 <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <header className="bg-gray-600 text-white px-6 md:px-8 py-6">
+                    <header className="bg-gray-800 text-white px-6 md:px-8 py-6">
                         <div className="flex flex-col md:flex-row items-center">
                             <img
                                 src={propfile}
@@ -47,19 +45,16 @@ export default function Resume() {
                             <div className="text-center md:text-left">
                                 <h1 className="text-3xl md:text-5xl font-bold">{resumeData.personalInfo.name}</h1>
                                 <p className="text-xl mt-1">{resumeData.personalInfo.title}</p>
-                                <div className="mt-4 flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-3">
+                                <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-3">
                                     {resumeData.personalInfo.contact.map((contact, index) => (
                                         <Link
                                             key={index}
                                             to={contact.link}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="flex items-center hover:text-blue-700">
+                                            className="flex items-center text-base md:text-lg hover:text-yellow-400">
                                             {contact.icon && <span className="mr-1">{contact.icon}</span>}
-
-
                                             {contact.title}
-
                                         </Link>
                                     ))}
                                 </div>
@@ -110,10 +105,7 @@ export default function Resume() {
                                         </div>
                                         <ul className="list-disc list-inside text-gray-600 space-y-1">
                                             {job.tasks.map((task, taskIndex) => (
-
                                                 <li key={taskIndex}>{task}</li>
-
-
                                             ))}
                                         </ul>
                                     </div>
@@ -170,7 +162,7 @@ export default function Resume() {
                 to="https://docs.google.com/document/d/1eoLigljS_pVKCFpcLwsmKKereg6j4L_2HlqcdEr2d5w/edit?usp=sharing"  // Use Link for navigation (e.g., a Google Drive link)
                 target="_blank"
                 rel="noopener noreferrer"
-                className="download-btn fixed bottom-6 left-6 p-4 bg-blue-500 text-white rounded-lg shadow-lg transform transition-all hover:scale-105 flex items-center space-x-2"
+                className="download-btn fixed bottom-6 left-6 p-4 bg-gray-800 text-white rounded-lg shadow-lg transform transition-all hover:scale-105 flex items-center space-x-2"
             >
                 <FaDownload className="text-white" /> {/* Download Icon */}
                 <span className='hidden md:flex'>Download Resume</span>

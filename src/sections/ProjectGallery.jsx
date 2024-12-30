@@ -22,10 +22,10 @@ export default function ProjectGallery() {
                   <img src={project.src} width={400} height={300} priority alt={project.title} className="w-full h-48 object-cover" />
                   <div className="p-4 bg-gradient-to-b from-gray-900 to-transparent">
                     <h3 className="text-lg font-semibold mb-2 font-regular">{project.title}</h3>
-                    <p className="text-sm text-gray-600 mb-4">{project.content}</p>
+                    <p className="text-sm text-gray-400 mb-4">{project.content}</p>
                     <div className="flex flex-wrap gap-2">
                       {project.techStack.map((tech, i) => (
-                        <div key={i} className="flex items-center space-x-2 text-sm text-gray-700 border border-gray-600 px-3 py-1">
+                        <div key={i} className="flex items-center space-x-2 text-xs md:text-sm text-gray-400 border rounded-full border-gray-600 px-3 py-2">
                           {tech.icon}
                           <span>{tech.title}</span>
                         </div>
