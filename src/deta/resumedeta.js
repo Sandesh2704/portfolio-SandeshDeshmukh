@@ -14,7 +14,7 @@ const resumeData = {
             { title: 'LinkedIn', icon: <FaLinkedin />, link: 'https://www.linkedin.com/in/sandeshdeshmukh-036b4624b' },
         ]
     },
-    summary: "Results-driven Next.js Developer with a strong background in creating dynamic, responsive, and user-centric web applications using the MERN stack. Expertise in developing scalable front-end solutions with React.js and Next.js, and building robust back-end systems using Node.js and MongoDB. Proven ability to enhance performance by up to 15% through optimized code and efficient resource management. Experienced in integrating RESTful APIs and delivering visually appealing UI/UX solutions that improve user engagement. Adept at collaborating with cross-functional teams to meet deadlines and deliver high-quality projects. Actively seeking opportunities to contribute technical expertise to innovative and fast-paced development teams.",
+    summary: "Results-driven Next.js Developer with 1+ years of experience in building dynamic, responsive web applications using the MERN stack. Skilled in React.js, Next.js, Node.js, and MongoDB. Proven ability to optimize performance, improving efficiency by up to 15%. Experienced in integrating RESTful APIs and delivering user-centric UI/UX solutions. Strong team collaboration and deadline-driven performance. Actively seeking new opportunities to contribute to innovative development teams.",
     keySkills: ["React.js", "Next.js", "Node.js", "MongoDB", "RESTful APIs", "Performance Optimization"],
     technicalSkills: [
         {
@@ -42,7 +42,7 @@ const resumeData = {
         {
             company: "ELIORA TECHNOLOGIES",
             location: "Nagpur",
-            role: "MERN Stack Developer Intern",
+            role: "MERN Stack Developer",
             duration: "July 2024 - Present",
             tasks: [
                 "Developed and maintained full-stack web applications using MongoDB, Express.js, React.js, and Node.js.",

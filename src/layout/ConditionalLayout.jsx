@@ -3,8 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from '../pages/Home';
 import Resume from '../pages/Resume';
 import MenuSideBar from '../components/MenuSideBar';
-import NavBar from '../components/NavBar';
-import Footer from '../components/Footer';
 
 export default function ConditionalLayout() {
     return (
@@ -15,13 +13,7 @@ export default function ConditionalLayout() {
                         {/* Home page with Navbar and Footer */}
                         <Route
                             path="/"
-                            element={
-                                <div  className="home-body  px-4 md:px-7 xl:px-10"  >
-                                    <NavBar />
-                                    <Home />
-                                    <Footer />
-                                </div>
-                            }
+                            element={ <Home />}
                         />
                         {/* Resume page without Navbar and Footer */}
                         <Route
