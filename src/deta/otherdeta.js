@@ -6,7 +6,7 @@ import { HiOutlineViewGridAdd } from "react-icons/hi";
 
 
 const socialMedia = [
-  { url: "www.linkedin.com/in/sandesh-deshmukh-036b4624b", title: "LinkedIn" },
+  { url: "https://www.linkedin.com/in/sandesh-deshmukh-036b4624b", title: "LinkedIn" },
   { url: "https://github.com/Sandesh2704", title: "GitHub" },
   { url: "https://x.com/SandeshD33951", title: "Twitter" },
   { url: "https://wa.me/qr/Y23HE5ZKAU2UF1", title: "WhatsApp" },
