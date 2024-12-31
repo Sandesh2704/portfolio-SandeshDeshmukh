@@ -11,7 +11,7 @@ const resumeData = {
             { title: 'Email',  icon: <MdEmail/>, link: 'mailto:sandeshdeshmukh2704@gmail.com' },
             { title: 'Portfolio', icon: <FaBriefcase />, link: 'https://portfolio-sandesh-deshmukh.vercel.app/' },
             { title: 'GitHub', icon: <FaGithub />, link: 'https://github.com/Sandesh2704' },
-            { title: 'LinkedIn', icon: <FaLinkedin />, link: 'https://www.linkedin.com/in/sandeshdeshmukh-036b4624b' },
+            { title: 'LinkedIn', icon: <FaLinkedin />, link: 'www.linkedin.com/in/sandesh-deshmukh-036b4624b' },
         ]
     },
     summary: "Results-driven Next.js Developer with 1+ years of experience in building dynamic, responsive web applications using the MERN stack. Skilled in React.js, Next.js, Node.js, and MongoDB. Proven ability to optimize performance, improving efficiency by up to 15%. Experienced in integrating RESTful APIs and delivering user-centric UI/UX solutions. Strong team collaboration and deadline-driven performance. Actively seeking new opportunities to contribute to innovative development teams.",
