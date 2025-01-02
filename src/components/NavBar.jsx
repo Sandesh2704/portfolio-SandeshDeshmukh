@@ -36,7 +36,7 @@ export default function NavBar() {
 
     return (
         <>
-            <nav className="py-6 absolute w-full flex items-center justify-between">
+            <nav className="py-6 absolute z-50 w-full flex items-center justify-between">
                 <motion.div
                     initial="hidden"
                     animate="visible"
