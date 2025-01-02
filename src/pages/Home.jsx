@@ -77,11 +77,11 @@ export default function Home({ isAnimationComplete, setIsAnimationComplete }) {
         const updateWidth = () => {
             const width = window.innerWidth;
             if (width < 640) {
-                setDashWidth("1rem"); // Mobile width
+                setDashWidth("0.7rem"); // Mobile width
             } else if (width >= 640 && width < 1024) {
                 setDashWidth("5rem"); // Tablet width
             } else {
-                setDashWidth("9rem"); // Desktop width
+                setDashWidth("8rem"); // Desktop width
             }
         };
 
