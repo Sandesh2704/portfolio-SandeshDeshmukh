@@ -1,6 +1,6 @@
 
 import { AnimatePresence, motion } from "framer-motion";
-import {  useState } from "react";
+import { useState } from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import { Link, useLocation } from "react-router-dom";
 import { socialMedia } from "../deta/otherdeta"
@@ -42,15 +42,15 @@ export default function MenuSideBar() {
     const [isActive, setIsActive] = useState(false);
     const location = useLocation();
     const [selectedIndicator, setSelectedIndicator] = useState(location.pathname);
-  
-  
-  
+
+
+
     const handleClick = () => {
-      setIsActive(false); // Close the sidebar
+        setIsActive(false); // Close the sidebar
     };
 
 
-     
+
 
     return (
         <>
@@ -63,7 +63,10 @@ export default function MenuSideBar() {
             )}
             {/* Sidebar toggle button */}
             <div className="fixed bottom-5 right-5 z-40">
-                 <div
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.8, y: 30 }}
+                    animate={{ opacity: 1, scale: 1, y: 0 }}
+                    transition={{ duration: 0.5, ease: 'easeOut' }}
                     onClick={() => setIsActive(!isActive)}
                     className="flex items-center justify-center shadow-md  h-16 w-16 md:h-[65px] md:w-[65px] bg-white rounded-full cursor-pointer"
                 >
@@ -85,7 +88,7 @@ export default function MenuSideBar() {
                                 }`}
                         ></span>
                     </div>
-                </div> 
+                </motion.div>
             </div>
 
 
@@ -171,7 +174,7 @@ const MenuLink = ({ data, isActive, setSelectedIndicator, handleClick }) => {
         >
             <motion.div
                 variants={scale}
-                animate={isActive ? "closed" :"open" }
+                animate={isActive ? "closed" : "open"}
                 className="w-2.5 h-2.5 bg-white rounded-full absolute left-[-30px]"
             ></motion.div>
 

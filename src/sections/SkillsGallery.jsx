@@ -222,6 +222,9 @@ export default function SkillsGallery() {
     }
   };
 
+
+
+
   const skillsVariant = {
     hidden: { opacity: 0, y: 10 },
     visible: (i) => ({
