@@ -43,7 +43,7 @@ const resumeData = {
             company: "ELIORA TECHNOLOGIES",
             location: "Nagpur",
             role: "MERN Stack Developer",
-            duration: "July 2024 - Present",
+            duration: "January 2024 – January 2025",
             tasks: [
                 "Developed and maintained full-stack web applications using MongoDB, Express.js, React.js, and Node.js.",
                 "Enhanced application performance by 15% through efficient code refactoring and optimizing resource usage.",
@@ -53,9 +53,9 @@ const resumeData = {
         },
         {
             company: "Riple Technologies LTD.",
-            location: "London",
+            location: "",
             role: "MERN Stack Developer Intern (Remote, Contract)",
-            duration: "March 2024 - June 2024",
+            duration: "September 2023 - December 2023",
             tasks: [
                 "Assisted with various software engineering tasks, contributing to the overall efficiency of projects.",
                 "Designed and implemented UI components with React.js, resulting in a 20% increase in user engagement.",

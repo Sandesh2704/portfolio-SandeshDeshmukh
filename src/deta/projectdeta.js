@@ -1,14 +1,34 @@
 import React from 'react'
-import project1 from "../assets/project/project-crm-portol.webp"
-import project2 from "../assets/project/project-rebel-protocol.jpg"
-import project3 from "../assets/project/project-toob-dog.webp"
-import project4 from "../assets/project/project-ui.webp"
+import codenest from "../assets/project/CodeNest.png"
+import crmPortol from "../assets/project/project-crm-portol.webp"
+import rebelprotocal from "../assets/project/project-rebel-protocol.jpg"
+import toobdog from "../assets/project/project-toob-dog.webp"
+import ui from "../assets/project/project-ui.webp"
 
 import { SiChartdotjs, SiExpress, SiFramer, SiMongodb, SiNextdotjs, SiReact, SiTailwindcss } from "react-icons/si";
+import { GiSpadeSkull } from 'react-icons/gi'
 
 const projectdeta = [
+
+  
+  
   {
-    src: project1,
+    src: codenest,
+    url: 'https://codenest-portfolio.firebaseapp.com/',
+    title: "Innovative Website Design for a Web Agency",
+    color: "#ff8ae4",
+    subtitle: "Design & Development",
+    content: "Developed a modern web agency website using React.js and Tailwind CSS, featuring smooth scrolling effects, GSAP animations, and Framer Motion for dynamic and interactive user experiences.",
+    techStack: [
+      { icon: <SiReact />, title: "React.js" },
+      { icon: <SiTailwindcss />, title: "Tailwind CSS" },
+      { icon: <SiFramer />, title: "Framer Motion" },
+      { icon: <GiSpadeSkull />, title: "Gsap" },
+    ],
+  },
+
+  {
+    src: crmPortol,
     title: "CRM Portal for Company Management",
     color: "#74edcd",
     subtitle: "Design & Development",
@@ -21,10 +41,10 @@ const projectdeta = [
     ],
   },
   {
-    src: project2,
+    src: rebelprotocal,
     url : 'https://rebel-protocol-96wiljsxr-sandesh-deshmukhs-projects.vercel.app/',
     title: "Token Presale Platform",
-    color: "#8C8C8C",
+    color: "#958aff ",
     subtitle: "Development",
     content: "A front-end for a token presale platform supporting multiple blockchain currencies and responsive design.",
     techStack: [
@@ -34,11 +54,23 @@ const projectdeta = [
       { icon: <SiChartdotjs />, title: "Chart.js" },
     ],
   },
-  {
-    src: project4,
 
+  {
+    src:toobdog,
+    url : 'https://toobdog-2q49s21vb-sandesh-deshmukhs-projects.vercel.app/',
+    title: "UI Design Conversion to Code",
+    color: "#f9ff42",
+    subtitle: "Development",
+    content: "Successfully converted a complex design into a fully functional and responsive user interface.",
+    techStack: [
+      { icon: <SiReact />, title: "React.js" },
+      { icon: <SiTailwindcss />, title: "Tailwind CSS" },
+    ],
+  },
+  {
+    src: ui,
     title: "Frontend & UI Development for Web Applications",
-    color: "#EFE8D3",
+    color: "#8affa7",
     subtitle: "Design & Development",
     content: "Responsive and user-centric web applications using the MERN stack and Next.js, ensuring seamless user experiences.",
     techStack: [
@@ -46,18 +78,6 @@ const projectdeta = [
       { icon: <SiReact />, title: "React.js" },
       { icon: <SiMongodb />, title: "MongoDB" },
       { icon: <SiExpress />, title: "Express.js" },
-    ],
-  },
-  {
-    src: project3,
-    url : 'https://toobdog-2q49s21vb-sandesh-deshmukhs-projects.vercel.app/',
-    title: "UI Design Conversion to Code",
-    color: "#706D63",
-    subtitle: "Development",
-    content: "Successfully converted a complex design into a fully functional and responsive user interface.",
-    techStack: [
-      { icon: <SiReact />, title: "React.js" },
-      { icon: <SiTailwindcss />, title: "Tailwind CSS" },
     ],
   },
 ];

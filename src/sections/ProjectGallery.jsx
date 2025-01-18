@@ -141,7 +141,7 @@ const Modal = ({ modal, projects }) => {
                 style={{ backgroundColor: color }}
                 key={`modal_${index}`}
               >
-                <img src={src} width={300} height={200} alt={color} />
+                <img src={src}  alt={color} className='min-w-[320px]  max-w-[320px]  ' />
               </div>
             );
           })}

@@ -36,8 +36,8 @@ export default function Footer() {
                             to="mailto:sandeshdeshmukh2704@gmail.com"
                             className="flex w-full text-xs lg:text-base items-center space-x-2 group font-regular"
                         >
-                            <span className="">say<span className="text-sm lg:text-2xl animate-waving-hand">👋</span> —</span>
-                            <div className="relative">
+                            <span className="flex items-center">say<span className="text-sm lg:text-2xl animate-waving-hand">👋</span> —</span>
+                            <div className="relative flex items-center">
                                 <h1 className="flex items-center text-gray-custom transition-colors">
                                     sandeshdeshmukh2704@gmail.com
                                 </h1>
