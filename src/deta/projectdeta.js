@@ -4,6 +4,7 @@ import crmPortol from "../assets/project/project-crm-portol.webp"
 import rebelprotocal from "../assets/project/project-rebel-protocol.jpg"
 import toobdog from "../assets/project/project-toob-dog.webp"
 import ui from "../assets/project/project-ui.webp"
+import previousPortfolio from "../assets/project/PortfolioWebsite.png"
 
 import { SiChartdotjs, SiExpress, SiFramer, SiMongodb, SiNextdotjs, SiReact, SiTailwindcss } from "react-icons/si";
 import { GiSpadeSkull } from 'react-icons/gi'
@@ -54,7 +55,6 @@ const projectdeta = [
       { icon: <SiChartdotjs />, title: "Chart.js" },
     ],
   },
-
   {
     src:toobdog,
     url : 'https://toobdog-2q49s21vb-sandesh-deshmukhs-projects.vercel.app/',
@@ -64,6 +64,20 @@ const projectdeta = [
     content: "Successfully converted a complex design into a fully functional and responsive user interface.",
     techStack: [
       { icon: <SiReact />, title: "React.js" },
+      { icon: <SiTailwindcss />, title: "Tailwind CSS" },
+    ],
+  },
+
+  {
+    src: previousPortfolio,
+    url : 'https://sandeshdeshmukhportfolio.vercel.app/',
+    title: "Portfolio Website (Previous Design)",
+    color: "#1e71e6",
+    subtitle: "Design & Development",
+    content: "A responsive portfolio built with Next.js and Tailwind CSS to showcase projects and professional achievements effectively.",
+    techStack: [
+      { icon: <SiNextdotjs />, title: "Next.js" },
+      { icon: <SiFramer />, title: "Framer Motion" },
       { icon: <SiTailwindcss />, title: "Tailwind CSS" },
     ],
   },
