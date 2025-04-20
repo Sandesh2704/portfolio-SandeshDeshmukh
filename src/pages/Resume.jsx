@@ -33,7 +33,7 @@ export default function Resume() {
         <div className="">
             <div className="container lg:mx-auto py-12 max-w-5xl">
                 <div className="bg-white shadow-lg rounded-lg">
-                    <header className="bg-gray-800 relative md:sticky md:top-0 rounded-lg text-white px-6 md:px-8 py-6 z-30">
+                    <header className="bg-gray-800 relative md:sticky md:top-0 rounded-lg text-white px-6 md:px-8 py-6 z-0">
                         <div className="flex flex-col md:flex-row items-center">
                             <img
                                 src={propfile}
@@ -96,7 +96,7 @@ export default function Resume() {
                             <div className="space-y-6">
                                 {resumeData.experience.map((job, index) => (
                                     <div key={index} className="md:border-l-2 border-gray-300 md:pl-4 md:ml-2">
-                                        <div className="relative">
+                                        <div>
                                             <h3 className="text-xl font-semibold text-gray-900">{job.role}</h3>
                                             <div className="flex flex-col md:flex-row md:justify-between text-gray-600 mb-2">
                                                 <p>{job.company} - {job.location}</p>
