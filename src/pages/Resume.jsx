@@ -32,7 +32,7 @@ export default function Resume() {
     return (
         <div className="">
             <div className="container lg:mx-auto py-12 max-w-5xl">
-                <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div className="bg-white shadow-lg rounded-lg">
                     <header className="bg-gray-800 relative md:sticky md:top-0 text-white px-6 md:px-8 py-6">
                         <div className="flex flex-col md:flex-row items-center">
                             <img
