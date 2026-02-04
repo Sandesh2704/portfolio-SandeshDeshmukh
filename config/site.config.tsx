@@ -70,11 +70,11 @@ export interface SiteConfig {
 const siteConfig: SiteConfig = {
   // Basic Info
   name: "Sandesh Deshmukh Portfolio",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://portfolio-sandesh-deshmukh.vercel.app",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://sandeshdeshmukhportfolio.vercel.app/",
   defaultLocale: "en",
   author: {
     name: "Sandesh Deshmukh",
-    url: "https://portfolio-sandesh-deshmukh.vercel.app",
+    url: "https://sandeshdeshmukhportfolio.vercel.app/",
     jobTitle: "Frontend Developer & UI Engineer",
   },
   
