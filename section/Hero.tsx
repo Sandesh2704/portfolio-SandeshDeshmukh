@@ -329,6 +329,23 @@ export default function Hero({ isAnimationComplete, setIsAnimationComplete }: He
     repeat={Infinity}
     className="intero text-base sm:text-lg text-pink-500 lg:text-lg"
   />
+
+  <TypeAnimation
+  sequence={[
+    "Frontend Engineer",
+    1200,
+    "SaaS Product Developer",
+    1200,
+    "UI/UX Developer",
+    1200,
+    "Full Stack Developer",
+    1200,
+  ]}
+  wrapper="span"
+  speed={30}
+  repeat={Infinity}
+  className="intero text-base sm:text-lg text-pink-500 lg:text-lg"
+/>
 </div>
 
 

@@ -18,7 +18,7 @@ const items: NavItem[] = [
   { id: "home", label: "Home", icon: <Home size={16} />, type: "route", to: "/" },
   { id: "about", label: "About", icon: <User size={16} />, type: "scroll", to: "about" },
   { id: "work", label: "Work", icon: <Briefcase size={16} />, type: "scroll", to: "work" },
-  { id: "resume", label: "Resume", icon: <FileText size={16} />, type: "route", to: "/resume" },
+  // { id: "resume", label: "Resume", icon: <FileText size={16} />, type: "route", to: "/resume" },
 ];
 
 export default function FloatingNav() {
