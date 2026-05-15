@@ -313,22 +313,6 @@ export default function Hero({ isAnimationComplete, setIsAnimationComplete }: He
     hiddenLetters.includes("D") ? "opacity-100" : "opacity-0"
   }`}
 >
-  <TypeAnimation
-    sequence={[
-      "Web Developer",
-      1000,
-      "MERN Stack Developer",
-      1000,
-      "Full Stack Developer",
-      1000,
-      "UI/UX Developer",
-      1000,
-    ]}
-    wrapper="span"
-    speed={30}
-    repeat={Infinity}
-    className="intero text-base sm:text-lg text-pink-500 lg:text-lg"
-  />
 
   <TypeAnimation
   sequence={[
