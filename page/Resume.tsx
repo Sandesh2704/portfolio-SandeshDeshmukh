@@ -343,7 +343,7 @@ export default function Resume() {
                     className="fixed bottom-6 left-6 z-[60]"
                     data-resume-download
                 >
-                    <Link href="/resume/Sandesh_Deshmukh_Frontend_Engineer.pdf" target="\_blank" rel="noopener noreferrer"
+                    <Link href="/Sandesh_Deshmukh_Frontend_Engineer.pdf" target="\_blank" rel="noopener noreferrer"
                         type="button"
                         className="
                             pointer-events-auto
