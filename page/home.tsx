@@ -4,6 +4,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Footer from "@/components/Footer";
 import SelectedWork from "@/section/SelectedWork";
+import YieldVaultWork from "@/section/YieldVaultWork";
 import ValueStatementSection from "@/section/ValueStatementSection";
 import WhatIBuild from "@/section/WhatIBuild";
 import Hero from "@/section/Hero";
@@ -28,6 +29,8 @@ export default function Home() {
                         <ValueStatementSection />
                         <div className="my-40" />
                         <SelectedWork />
+                        <div className="my-40" />
+                        <YieldVaultWork />
                         <div className="my-40" />
                         <AboutSection />
                         <div className="my-28" />

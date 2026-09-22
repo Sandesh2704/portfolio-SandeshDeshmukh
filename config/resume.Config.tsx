@@ -210,6 +210,22 @@ experience: [
                 "REST APIs",
             ],
         },
+        {
+            name: "YieldVault",
+            type: "Solana DeFi Portfolio Dashboard",
+            duration: "2026",
+            link: "https://github.com/Sandesh2704/yieldvault",
+            description:
+                "Built a Solana DeFi dashboard for wallet connection, live portfolio tracking, yield position previews, and on-chain transaction workflows using Solana wallet adapter, real-time price feeds, and a glassmorphic product UI.",
+            technologies: [
+                "Next.js",
+                "TypeScript",
+                "Solana",
+                "Wallet Adapter",
+                "Recharts",
+                "Tailwind CSS",
+            ],
+        },
     ],
 
     professionalCourse: {
