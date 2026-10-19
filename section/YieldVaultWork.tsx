@@ -222,7 +222,7 @@ export default function YieldVaultWork() {
 
             <div className="mt-7 flex flex-wrap gap-4 xl:justify-end">
               <Link
-                href="https://github.com/Sandesh2704/yieldvault"
+                href="https://yieldvault-967l.vercel.app/"
                 target="_blank"
                 className="group flex items-center gap-2 rounded bg-pink-600 px-6 py-3 text-sm font-semibold text-white transition-all hover:scale-[1.03]"
               >
