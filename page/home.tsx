@@ -15,11 +15,6 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Home() {
     const [isAnimationComplete, setIsAnimationComplete] = useState(false);
 
-
-
-
-
-
     return (
         <>
             <div className="">
